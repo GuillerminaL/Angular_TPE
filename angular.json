@@ -32,7 +32,7 @@
           "skipTests": true
         }
       },
-      "root": "",
+      "root": "/Angular/page",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
