@@ -1,0 +1,14 @@
+<div class="form-container">
+  <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+    <h2>New ToDo</h2>
+    <div class="input-group mb-3">
+      <input ngModel #todoTextField="ngModel" required name="text" type="text" class="form-control" placeholder="" aria-label="Recipient's todo" aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="submit" id="button-addon2">
+        <span>Add</span>
+      </button>
+    </div>
+    <div *ngIf="todoTextField.invalid">
+      <p>Add a text for your new todo...</p>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<div mat-dialog-content>
+  <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
+    <h2>Edit ToDo</h2>
+    <div class="input-group mb-3">
+      <input [ngModel]="todo.text"  required name="text" type="text" class="form-control" placeholder="" aria-label="Recipient's todo" aria-describedby="button-addon2">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-secondary" type="button" (click)="close()">
+          Cancel
+        </button>
+        <button class="btn btn-outline-primary" type="submit">
+          Edit
+        </button>
+      </div>
+    </div>
+    <div *ngIf="form.invalid">
+      <p>Add a new text for editing your todo...</p>
+    </div>
+  </form>
+</div>

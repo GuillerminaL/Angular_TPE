@@ -1,0 +1,41 @@
+section {
+  padding: 3em;
+}
+
+form h2{
+  color: rgb(73, 73, 73);
+}
+
+.form-container {
+  background: linear-gradient(to right, rgb(0, 255, 255), rgb(96, 204, 240));
+  padding: 3em 1em;
+}
+
+.form-container {
+  margin: 1em 0em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px lightgrey;
+}
+
+form h2 {
+  font-size: 1em;
+  padding: .5em;
+}
+
+form p {
+  font-size: .7em;
+  padding-left: .5em;
+}
+
+form button {
+  background-color: aquamarine;
+  border-color: aquamarine;
+}
+
+form {
+  padding: 1em;
+}
+
+button span {
+  font-weight: 600;
+}
