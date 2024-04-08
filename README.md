@@ -1,4 +1,22 @@
-# AngularTodolistApp
+# Angular To Do List Application
+
+### Description
+The project constains a simple To Do List application developed with TypeScript and Angular
+
+
+
+-----------------------------------------
+2022
+
+Final Project for
+*Seminario de Angular* 
+
+*Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas (TUDAI)*
+
+*Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN)* 
+
+-----------------------------------------
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
