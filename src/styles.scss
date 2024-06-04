@@ -1,4 +1,45 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
-html, body { height: 100%; }
-body { margin: 0; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin-top: 10em;
+}
+
+section {
+  display: flex;
+  margin: 5vw;
+}
+
+.left, .right {
+  display: flex;
+  height: 100vw;
+}
+
+section .left {
+  position: fixed;
+  width: 25vw;
+  text-align: right;
+}
+
+section .right {
+  margin-left: 29vw;
+  flex-flow: wrap;
+  align-content: flex-start;
+  justify-items: left;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+li {
+  padding: .5em;
+  max-width: fit-content;
+  min-width: fit-content;
+}

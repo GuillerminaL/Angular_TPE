@@ -8,6 +8,7 @@ const URL = 'https://61bb9f4de943920017784f53.mockapi.io/todo';
 @Injectable({
   providedIn: 'root'
 })
+
 export class TodoDataService {
 
   constructor(private http: HttpClient) { }
@@ -27,8 +28,5 @@ export class TodoDataService {
   public updateTodo(updateTodo: Todo): void {
     this.http.put(URL, updateTodo);
   }
-
-  
-
 
 }

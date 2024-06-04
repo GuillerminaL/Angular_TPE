@@ -1,0 +1,16 @@
+<section>
+  <div class="left">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="right">
+<!--    <ul>-->
+<!--      <div *ngFor="let todo of todos">-->
+<!--        <ng-container *ngIf="!todo.completed; then show"></ng-container>-->
+<!--        <ng-template #show>-->
+<!--          <li><app-todo-item [todo]="todo"></app-todo-item></li>-->
+<!--        </ng-template>-->
+<!--      </div>-->
+<!--    </ul>-->
+    <app-editable-undone-cards-list></app-editable-undone-cards-list>
+  </div>
+</section>

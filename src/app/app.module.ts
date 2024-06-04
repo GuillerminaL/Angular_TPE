@@ -1,37 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FormsModule } from '@angular/forms';
-import { TodoItemComponent } from './todo-item/todo-item.component';
-import { TodosListComponent } from './todos-list/todos-list.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
+import { EditableUndonesListComponent } from './pages/undones-list/undones-list.component';
+import { AboutComponent } from './pages/about/about.component';
+import { EditableDonesListComponent } from './pages/dones-list/dones-list.component';
+import { EditableTodoListComponent } from './pages/editable-todo-list/editable-todo-list.component';
 
-import { MatDialogModule } from '@angular/material/dialog';
-import { TodoAboutComponent } from './todo-about/todo-about.component';
-import { DonesListComponent } from './dones-list/dones-list.component';
-import { AddFormComponent } from './add-form/add-form.component';
-import { EditableCardsListComponent } from './editable-cards-list/editable-cards-list.component';
-import { EditableTodoListComponent } from './editable-todo-list/editable-todo-list.component';
-import { AllTasksListComponent } from './all-tasks-list/all-tasks-list.component';
-
-import { HttpClientModule } from '@angular/common/http'; 
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { EditDialogComponent } from './components/edit-dialog/edit-dialog.component';
+import { AddFormComponent } from './components/add-form/add-form.component';
+import { EditableCardsListComponent } from './components/editable-cards-list/editable-cards-list.component';
+import { EditableUndoneCardsListComponent } from "./components/editable-cards-list/editable-filtered-list/editable-undone-cards-list.component";
+import { EditableDoneCardsListComponent } from "./components/editable-cards-list/editable-filtered-list/editable-done-cards-list.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosListComponent,
+    EditableUndonesListComponent,
     TodoItemComponent,
     EditDialogComponent,
-    TodoAboutComponent,
-    DonesListComponent,
+    AboutComponent,
+    EditableDonesListComponent,
     AddFormComponent,
     EditableCardsListComponent,
     EditableTodoListComponent,
-    AllTasksListComponent
+    EditableUndoneCardsListComponent,
+    EditableDoneCardsListComponent,
   ],
   imports: [
     BrowserModule,

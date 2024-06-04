@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AllTasksListComponent } from './all-tasks-list/all-tasks-list.component';
-import { DonesListComponent } from './dones-list/dones-list.component';
-import { EditableTodoListComponent } from './editable-todo-list/editable-todo-list.component';
-import { TodoAboutComponent } from './todo-about/todo-about.component';
-import { TodosListComponent } from './todos-list/todos-list.component';
+import { EditableTodoListComponent } from './pages/editable-todo-list/editable-todo-list.component';
+import { EditableDonesListComponent } from './pages/dones-list/dones-list.component';
+import { EditableUndonesListComponent } from './pages/undones-list/undones-list.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   // {path: '', redirectTo: 'todos', pathMatch: 'full'},
-  {path: '', component: AllTasksListComponent},
-  {path: 'add', component: EditableTodoListComponent},
-  {path: 'undones', component: TodosListComponent},
-  {path: 'dones', component: DonesListComponent},
-  {path: 'about', component: TodoAboutComponent},
+  {path: '', component: EditableTodoListComponent},
+  {path: 'dones', component: EditableDonesListComponent},
+  {path: 'undones', component: EditableUndonesListComponent},
+  {path: 'about', component: AboutComponent},
 ];
 
 @NgModule({

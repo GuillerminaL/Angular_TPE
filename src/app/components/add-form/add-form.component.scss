@@ -1,0 +1,23 @@
+.form-container {
+  background: linear-gradient(to right, rgb(0, 255, 255), rgb(96, 204, 900));
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px yellow;
+  text-align: left;
+  justify-self: center;
+  align-self: baseline;
+  min-width: 50vw;
+}
+
+form p {
+  font-size: .7em;
+  padding-left: 1em;
+}
+
+form button {
+  background-color: aquamarine;
+  border-color: aquamarine;
+}
+
+button span {
+  font-weight: 600;
+}

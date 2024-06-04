@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Todo } from '../models/todo.model';
 
 @Injectable({
@@ -12,25 +11,33 @@ export class DataService {
 
   todos: Todo[] = [
     {
-      text: "Levantar un pie",
+      text: "Be grateful",
       completed: false,
     },
     {
-      text: "Elevar el muslo",
+      text: "Go outside",
       completed: false,
     },
     {
-      text: "Pisar el escalón",
+      text: "💓 Love",
       completed: true,
     },
     {
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus inventore accusantium eos enim laudantium, praesentium animi autem explicabo a, deserunt quo aliquam commodi voluptatum vel, vero nulla id sapiente!",
+      text: "Have time to myself",
       completed: false,
     },
     {
-      text: "Extender la rodilla",
+      text: "Meditate",
       completed: true,
     },
+    {
+      text: "Spend time with loved ones",
+      completed: true,
+    },
+    {
+      text: "Spend time with loved ones",
+      completed: true,
+    }
   ];
 
   constructor() { }
@@ -44,7 +51,7 @@ export class DataService {
         text: text,
         completed: false,
     };
-    this.todos.push(newTodo);
+    this.todos.unshift(newTodo);
   }
 
   updateTodo(index: number, updateTodo: Todo ): void {
